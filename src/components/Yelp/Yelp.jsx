@@ -3,35 +3,42 @@ import { useState, useEffect } from 'react';
 
 export default function Yelp() {
 
+ const [userLocationInput, setUserLocationInput] = useState('');
  const [userLocation, setUserLocation] = useState('');
- const [resultsLimit, setResultsLimit] = useState('');
+ const [resultsLimit, setResultsLimit] = useState();
+
+ const handleSubmit = (event) => {
+   event.preventDefault();
+   setUserLocationInput(event.target.value);
+ }
 
  useEffect(() => {
    setResultsLimit(20);
 
    const proxiedUrl = 'https://api.yelp.com/v3/businesses/search';
-   const apiKey = {process.env.YELP_API};
-   const url = new  URL('https://proxy.hackeryou.com');
-   url.search = new  URLSearchParams({
+   const apiKey = `${process.env.YELP_API}`;
+   const url = new URL('https://proxy.hackeryou.com');
+   url.search = new URLSearchParams({
      reqURL: proxiedUrl,
      'params[key]': apiKey,
      'params[term]': 'thrift_stores',
      'params[location]': userLocation,
      'params[limit]': resultsLimit,
-     'proxyHeaders[Authorization]': `Bearer ${apiKey}`
-
+     'proxyHeaders[Authorization]': `Bearer ${apiKey}`,
     });
     fetch(url)
       .then(response => response.json())
       .then(data => {
         if (data.businesses) {
-          setUserLocation(data.businesses);
-        }
+          userLocationInput(data.businesses);
+        } 
       });
  }, [userLocation, resultsLimit]);
 
   return (
-    <div>Yelp</div>
+    <div>
+      
+    </div>
   )
 }
 

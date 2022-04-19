@@ -6,11 +6,8 @@
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
-<<<<<<< HEAD
-    "leaflet": "^1.7.1",
-=======
     "axios": "^0.26.1",
->>>>>>> a612bca7506ca655dcbf0320af3c18cfef286ac0
+    "leaflet": "^1.7.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",

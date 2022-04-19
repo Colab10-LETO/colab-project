@@ -1,4 +1,5 @@
 import './App.css';
+import Yelp from './components/Yelp/Yelp';
 
 function App() {
 //option to do navlinks
@@ -7,6 +8,8 @@ function App() {
   return (
     <div className="App">
       <h1>colab project yay!</h1>
+      <Yelp />
+
       
     </div>
   );
