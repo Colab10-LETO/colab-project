@@ -5,3 +5,5 @@ export default function Yelp() {
     <div>Yelp</div>
   )
 }
+
+//{process.env.YELP_API}
