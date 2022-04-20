@@ -1,15 +1,26 @@
 import './App.css';
+import React, {Component} from 'react'
+import { BrowserRouter as Router,
+  Switch,
+  Route, } from 'react-router-dom';
+import Home from './views/Home';
+import About from './views/About';
 
-function App() {
-//option to do navlinks
-//put in routes
-
-  return (
-    <div className="App">
-      <h1>colab project yay!</h1>
+export default class App extends Component {
+  render() {
+   return (
+      <>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home}/>
+          <Route path="/about" exact component={About} />
+        </Switch>
+      </Router>
       
-    </div>
-  );
+      </>
+    )
+    
+    
+  } 
+  
 }
-
-export default App;
