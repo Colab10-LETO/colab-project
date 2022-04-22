@@ -14,11 +14,6 @@ const Yelp = () => {
 
 
 
-
-    const handleInputting = (event) => {
-        setUserInputting(event.target.value);
-    }
-
     const foodInputting = (event) => {
         setUserLocation(event.target.value);
     }
