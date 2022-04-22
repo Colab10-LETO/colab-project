@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 
 
@@ -32,7 +31,7 @@ const Yelp = () => {
         setResultsLimit(20);
 
         const proxiedUrl = 'https://api.yelp.com/v3/businesses/search';
-        const apiKey = 'aBxSiTyY0p_jeLtxS_UNy_3-xGQ0YPFoTBguPsZvIlR63mVsy4chN01zodvvee9pCvMI7nt0gCcHxzr7KYeq0mZXw4ZUZ20nItdEekKlhAzECi86l-dlOK5lnjxYYnYx';
+        const apiKey = process.env.REACT_APP_YELP_API;
         const url = new URL('https://proxy.hackeryou.com');
         url.search = new URLSearchParams({
             reqUrl: proxiedUrl,
