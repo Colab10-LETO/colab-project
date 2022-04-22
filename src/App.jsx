@@ -1,8 +1,9 @@
 import './App.css';
 import React, {Component} from 'react'
 import { BrowserRouter as Router,
-  Switch,
-  Route, } from 'react-router-dom';
+  Routes,
+  Route,
+  NavLink, } from 'react-router-dom';
 import Home from './views/Home';
 import About from './views/About';
 
@@ -11,10 +12,14 @@ export default class App extends Component {
    return (
       <>
       <Router>
-        <Switch>
+        <header>
+          <NavLink to ='/'>Home</NavLink>
+          <NavLink to='/about'>About</NavLink>
+        </header>
+        <Routes>
           <Route path="/" exact component={Home}/>
           <Route path="/about" exact component={About} />
-        </Switch>
+        </Routes>
       </Router>
       
       </>

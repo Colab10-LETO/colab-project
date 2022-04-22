@@ -10,7 +10,7 @@ export default function Yelp() {
    setResultsLimit(20);
 
    const proxiedUrl = 'https://api.yelp.com/v3/businesses/search';
-   const apiKey = {process.env.YELP_API};
+   const apiKey = process.env.YELP_API;
    const url = new  URL('https://proxy.hackeryou.com');
    url.search = new  URLSearchParams({
      reqURL: proxiedUrl,
