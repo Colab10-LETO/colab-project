@@ -13,7 +13,7 @@ const Yelp = () => {
 
 
 
-    const foodInputting = (event) => {
+    const shopInputting = (event) => {
         setUserLocation(event.target.value);
     }
 
@@ -50,6 +50,8 @@ const Yelp = () => {
             });
     }, [searchTerm, searchLocation, resultsLimit]);
 
+    console.log(userShopSearch);
+
 
 
     return (
@@ -57,7 +59,7 @@ const Yelp = () => {
             <div>
                 <form onSubmit={handleSubmitting}>
                     <label htmlFor="location">Where are you?</label>
-                    <input type="text" id="location" value={userLocation} onChange={foodInputting} />
+                    <input type="text" id="location" value={userLocation} onChange={shopInputting} />
                     <button>Search</button>
                 </form>
                 <ul className="shopList">
