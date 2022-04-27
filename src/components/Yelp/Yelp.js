@@ -77,7 +77,7 @@ const Yelp = () => {
                                         <p>{shop.location.city}</p>
                                         <p>{shop.phone}</p>
                                         <p>Rating: {shop.rating}/5</p>
-                                        <p><a href={shop.url}>More Info</a></p>
+                                        <p className='moreInfo'><a href={shop.url}>More Info</a></p>
                                     </div>
                                 </div>
                             </li>

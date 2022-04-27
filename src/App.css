@@ -13,6 +13,10 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     padding: 0;
 }
 
+html {
+    font-size: 125%
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Merriweather+Sans:wght@300;400&family=Roboto:wght@400;500&display=swap');
 
 
@@ -28,15 +32,36 @@ h1{
     padding: 30px;
 }
 
+h2 {
+    font-family: 'Merriweather Sans';
+    font-size: 1rem;
+}
+
 Header {
     background-color: #222221;
 }
 
 .shopContainer {
+    background-color: #F5F3F1;
     margin: 0 auto;
-    width: 400px;
+    padding: 3%;
+    width: 55%;
     display: flex;
     gap: 10px;
+    border-top: solid 1px #AAA;
+}
+
+.moreInfo {
+    border: solid 1px #D3A25E;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Merriweather Sans';
+    font-size: .8rem;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
 }
 
 .shopList {
@@ -44,7 +69,10 @@ Header {
 }
 
 img {
-    width: 300px;
+    width: 200px;
+    height:300px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 
