@@ -1,6 +1,14 @@
 import React from 'react'
-import { GoogleMap, useLoadScript, Marker, Infowindow } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Marker, Infowindow } from '@react-google-maps/api';
+// call in the yelp and map API here
+//Pass down from Parent to Child
+//Pass in the Map and Yelp API stuff here
+//does the yelp api use coordinance 
+//if google api = yelp api coordinance, render the location
+//response body does return lat and long
+//if you get an array of it, you might be able to map through them
 
+//or, add a button on the yelp page that Links to the map page, and pop in the lon and lat that way
 
 const mapContainerStyle = {
   width: '100vw',
@@ -15,19 +23,27 @@ const center = {
 
 
 export default function Map() {
-  const {isLoaded, loadError} = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_KEY,
-   
-  });
+  
+  // const [lat, setLat] = useState([])
+  // const [lng, setLng] = useState([])
 
-  if (loadError) return 'Error loading maps';
-  if (!isLoaded) return 'Loading Maps...';
+
+  // const {isLoaded, loadError} = useLoadScript({
+  //   googleMapsApiKey: process.env.REACT_APP_GOOGLE_KEY,
+   
+  // });
+
+  // if (loadError) return 'Error loading maps';
+  // if (!isLoaded) return 'Loading Maps...';
 
   return (
-     <div>
-       <GoogleMap mapContainerStyle={mapContainerStyle}
-       zoom={8} center={center}></GoogleMap>
-     </div>
+    <div>
+    <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_API}>
+    <GoogleMap mapContainerStyle={mapContainerStyle}
+     zoom={8} center={center}>
+    </GoogleMap>
+    </LoadScript>
+  </div>
   )
      
 }
