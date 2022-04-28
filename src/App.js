@@ -2,7 +2,7 @@ import './App.css';
 import React, {Component} from 'react'
 import Yelp from './components/Yelp.js'
 import { Route, Routes } from "react-router-dom";
-import Map from './components/Map';
+import Map from './components/map/Map';
 
 
 
@@ -11,10 +11,10 @@ export default class App extends Component {
    return (
     <>
     <Yelp />
-    
-    <Routes>
+
+    {/* <Routes>
       <Route path='/map' element={<Map />} />
-    </Routes>
+    </Routes> */}
       </>
     )
     
