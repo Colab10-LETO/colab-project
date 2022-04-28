@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Map from './map/Map';
  
 
 const Yelp = () => {
@@ -52,6 +53,10 @@ const Yelp = () => {
     console.log(userShopSearch);
 
 
+//render a button that will link to the Maps page
+//render in coordinates that will bring up the searched coordinate
+//hypothetically, now that the map is a child to yelp and header, and therefore app
+//we can pass down the lat and lng state
 
     return (
         <div>
@@ -83,6 +88,7 @@ const Yelp = () => {
                         )
                     })}
                 </ul>
+                    {/* <Map latitude={searchLocation.latitude} longitude={searchLocation.longitude} /> */}
             </div>
         </div>
 

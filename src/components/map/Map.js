@@ -20,17 +20,14 @@ const center = {
   lng: -122.4194,
 }
 
-
+//hypothetically, if we pass in the latitude and longitude from the app, then when we create markers, we should just be able to declare the logitude and latitude as what we've passed in
+ //create Marker here
+  //When creating Marker, pass in the lat and long
+  //since we are using js instead of jsx, is passing state and params 
 
 const Map = () => {
-  
-  // const [lat, setLat] = useState([])
-  // const [lng, setLng] = useState([])
 
 
-
-
- 
   return (
      <div>
        <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_API}>
@@ -44,7 +41,5 @@ const Map = () => {
 }
 
 export default Map
-
-
 
 
