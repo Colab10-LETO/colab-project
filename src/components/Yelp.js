@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Map from './map/Map';
+
  
 
 const Yelp = () => {

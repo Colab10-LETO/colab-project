@@ -1,5 +1,5 @@
 import React from 'react'
-import { GoogleMap, LoadScript, Marker, Infowindow } from '@react-google-maps/api';
+import { GoogleMap, useLoadScript, LoadScript, Marker, Infowindow } from '@react-google-maps/api';
 // call in the yelp and map API here
 //Pass down from Parent to Child
 //Pass in the Map and Yelp API stuff here
@@ -28,21 +28,21 @@ export default function Map() {
   // const [lng, setLng] = useState([])
 
 
-  // const {isLoaded, loadError} = useLoadScript({
-  //   googleMapsApiKey: process.env.REACT_APP_GOOGLE_KEY,
+  const {isLoaded, loadError} = useLoadScript({
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_KEY,
    
-  // });
+  });
 
-  // if (loadError) return 'Error loading maps';
-  // if (!isLoaded) return 'Loading Maps...';
+  if (loadError) return 'Error loading maps';
+  if (!isLoaded) return 'Loading Maps...';
 
   return (
     <div>
-    <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_API}>
+    
     <GoogleMap mapContainerStyle={mapContainerStyle}
      zoom={8} center={center}>
     </GoogleMap>
-    </LoadScript>
+   
   </div>
   )
      
