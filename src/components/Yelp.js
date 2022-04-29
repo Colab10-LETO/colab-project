@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Fallbackimage from '../assets/place_filler_image.png'
 
  
 
@@ -62,7 +63,7 @@ const Yelp = () => {
         <div>
             <div>
                 <form onSubmit={handleSubmitting}>
-                    <label htmlFor="location">Where are you?</label>
+                    <label className='locationInput Label' htmlFor="location">Where are you?</label>
                     <input type="text" id="location" value={userLocation} onChange={shopInputting} />
                     <button>Search</button>
                 </form>
@@ -72,14 +73,14 @@ const Yelp = () => {
                             <li key={shop.id}>
                                 <div className="shopContainer" key={shop.id}>
                                     <div className="shopImage">
-                                        <img src={shop.image_url} alt={`${shop.name}`} />
+                                        <img src={shop.image_url} onError={(e)=>{e.target.onerror = null; e.target.src=Fallbackimage}}  />
                                     </div>
                                     <div className="shopInfo">
                                         <h2>{shop.name}</h2>
                                         <p className="shopType">{shop.categories[0].title}</p>
                                         <p>{shop.location.address1} {shop.location.address2}</p>
                                         <p>{shop.location.city}</p>
-                                        <p>{shop.phone}</p>
+                                        <p><a href={"tel:"+shop.phone}>{shop.phone}</a></p>
                                         <p>Rating: {shop.rating}/5</p>
                                         <p className='moreInfo'><a href={shop.url}>More Info</a></p>
                                     </div>

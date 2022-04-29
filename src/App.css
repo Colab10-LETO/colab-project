@@ -32,6 +32,11 @@ h1{
     padding: 30px;
 }
 
+form {
+    text-align: center;
+    padding: 2%;
+}
+
 h2 {
     font-family: 'Merriweather Sans';
     font-size: 1rem;
@@ -44,6 +49,7 @@ Header {
 .shopContainer {
     background-color: #F5F3F1;
     margin: 0 auto;
+    text-align: center;
     padding: 3%;
     width: 55%;
     display: flex;
@@ -51,17 +57,36 @@ Header {
     border-top: solid 1px #AAA;
 }
 
+.shopType{
+    line-height: 40px;
+}
+
 .moreInfo {
-    border: solid 1px #D3A25E;
+    border: solid 1.5px #D3A25E;
     border-radius: 10px;
     text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 2%;
+    margin-top: 20px;
+    width: 400px;
     font-family: 'Merriweather Sans';
     font-size: .8rem;
+}
+
+.moreInfo:hover {
+    background-color: #222221;
+    border: solid 1.5px #D3A25E;
 }
 
 a {
     text-decoration: none;
     color: #000;
+    width: 400px;
+}
+
+a:hover{
+    color: #D3A25E;
 }
 
 .shopList {
