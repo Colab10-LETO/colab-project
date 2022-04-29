@@ -1,5 +1,5 @@
 import React from 'react'
-import { GoogleMap, useLoadScript, LoadScript, Marker, Infowindow } from '@react-google-maps/api';
+import { GoogleMap, useLoadScript} from '@react-google-maps/api';
 // call in the yelp and map API here
 //Pass down from Parent to Child
 //Pass in the Map and Yelp API stuff here
