@@ -57,9 +57,6 @@ Header {
     border-top: solid 1px #AAA;
 }
 
-.shopType{
-    line-height: 40px;
-}
 
 .moreInfo {
     border: solid 1.5px #D3A25E;
@@ -77,6 +74,8 @@ Header {
 .moreInfo:hover {
     background-color: #222221;
     border: solid 1.5px #D3A25E;
+    color: #D3A25E;
+    transition: .3s ease-in;
 }
 
 a {
@@ -85,9 +84,17 @@ a {
     width: 400px;
 }
 
-a:hover{
-    color: #D3A25E;
+p{
+    line-height: 30px;
+    font-family: 'Roboto';
+    font-size: .8rem;
 }
+
+
+.shopType {
+    font-size: .75rem;
+}
+
 
 .shopList {
     list-style: none;
