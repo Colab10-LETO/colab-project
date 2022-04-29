@@ -73,7 +73,7 @@ const Yelp = () => {
                 <div className="shopContainer" key={shop.id}>
                   <div className="shopImage">
                     <img
-                      src={shop.image_url}
+                      src={shop.image_url} alt={shop.name}
                       onError={(e) => {
                         e.target.onerror = null;
                         e.target.src = Fallbackimage;
