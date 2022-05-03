@@ -51,8 +51,9 @@ Header {
     margin: 0 auto;
     text-align: center;
     padding: 3%;
-    width: 55%;
+    width: 90%;
     display: flex;
+    flex-direction: column;
     gap: 10px;
     border-top: solid 1px #AAA;
 }
@@ -66,7 +67,6 @@ Header {
     letter-spacing: 1px;
     padding: 2%;
     margin-top: 20px;
-    width: 400px;
     font-family: 'Merriweather Sans';
     font-size: .8rem;
 }
