@@ -39,7 +39,7 @@ form {
 
 h2 {
     font-family: 'Merriweather Sans';
-    font-size: 1rem;
+    font-size: .85rem;
 }
 
 Header {
@@ -49,13 +49,26 @@ Header {
 .shopContainer {
     background-color: #F5F3F1;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     padding: 3%;
-    width: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+ul {
+    background-color: #F5F3F1;
+}
+
+li {
+    border-top: solid 1px #AAA;
+    padding-bottom: 10px;
+}
+
+.shopInfo {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    border-top: solid 1px #AAA;
 }
 
 
@@ -66,7 +79,7 @@ Header {
     text-decoration: none;
     letter-spacing: 1px;
     padding: 2%;
-    margin-top: 20px;
+    margin-top: 35px;
     font-family: 'Merriweather Sans';
     font-size: .8rem;
 }
@@ -81,18 +94,19 @@ Header {
 a {
     text-decoration: none;
     color: #000;
-    width: 400px;
+    width: 225px;
 }
 
 p{
-    line-height: 30px;
+    line-height: 25px;
     font-family: 'Roboto';
-    font-size: .8rem;
+    font-size: .7rem;
+    text-align: left;
 }
 
 
 .shopType {
-    font-size: .75rem;
+    font-size: .7rem;
 }
 
 
@@ -100,12 +114,18 @@ p{
     list-style: none;
 }
 
+.shopImage {
+    width: 155px;
+    height: 245px;
+}
+
 img {
-    width: 200px;
-    height:300px;
+    width: 155px;
+    height:245px;
     object-fit: cover;
     border-radius: 10px;
 }
+
 
 
 
