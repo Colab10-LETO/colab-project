@@ -95,15 +95,15 @@ const Yelp = () => {
                       <a href={"tel:" + shop.phone}>{shop.phone}</a>
                     </p>
                     <p>Rating: {shop.rating}/5 ({shop.review_count})</p>
-                    <a href={shop.url}>
-                      <p className="moreInfo">More Info</p>
+                    <a href={shop.url} target={'_blank'} rel='noreferrer'>
+                      <p>More Info</p>
                     </a>
                     <a href={'https://maps.google.com/?q=' + shop.location.address1} target={'_blank'} rel='noreferrer'>
                         <p className="moreInfo">Get Directions</p>
                     </a>
-                    
-                  </div>
+                    </div>
                 </div>
+                
               </li>
             );
           })}
