@@ -1,5 +1,5 @@
 import React from 'react'
-import { GoogleMap, useLoadScript} from '@react-google-maps/api';
+import { GoogleMap, useLoadScript, LoadScript, Marker, Infowindow } from '@react-google-maps/api';
 // call in the yelp and map API here
 //Pass down from Parent to Child
 //Pass in the Map and Yelp API stuff here
@@ -22,7 +22,7 @@ const center = {
 
 
 
-export default function Map() {
+export default function Map({latitude, longitude}) {
   
   // const [lat, setLat] = useState([])
   // const [lng, setLng] = useState([])
@@ -42,6 +42,7 @@ export default function Map() {
     <GoogleMap mapContainerStyle={mapContainerStyle}
      zoom={8} center={center}>
     </GoogleMap>
+    <Marker position={{lat: latitude, lng: longitude}} />
    
   </div>
   )

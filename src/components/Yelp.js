@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import Fallbackimage from "../assets/place_filler_image.png";
+import shirtrating from "../assets/shirtrating.png"
+import { getStars } from "../utils/stars"
+import Map from "./Map"
 
 const Yelp = () => {
   const [userInputting, setUserInputting] = useState("");
@@ -68,6 +71,7 @@ const Yelp = () => {
         </form>
         <ul className="shopList">
           {userShopSearch.map((shop) => {
+            // <Map latitude={shop.coordinates.latitude} longitude={shop.coordinates.longitude} />
             return (
               <li key={shop.id}>
                 <div className="shopContainer" key={shop.id}>
@@ -94,7 +98,8 @@ const Yelp = () => {
                     <p>
                       <a href={"tel:" + shop.phone}>{shop.phone}</a>
                     </p>
-                    <p>Rating: {shop.rating}/5 ({shop.review_count})</p>
+                    <div className="rating"><p>Rating: {shop.rating}/5 ({shop.review_count})</p> <img className="shirt" src={shirtrating} alt="shirt" /></div>
+                    <p>{shop.reviews}</p>
                     <a href={shop.url}>
                       <p className="moreInfo">More Info</p>
                     </a>
@@ -108,7 +113,6 @@ const Yelp = () => {
             );
           })}
         </ul>
-        {/* <Map latitude={searchLocation.latitude} longitude={searchLocation.longitude} /> */}
       </div>
     </div>
   );
