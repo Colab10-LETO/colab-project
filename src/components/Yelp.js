@@ -83,9 +83,11 @@ const Yelp = () => {
                   <div className="shopInfo">
                     <div className="shopNameAndType">
                       <h2>{shop.name}</h2>
+                      <p>Rating: {shop.rating}/5 ({shop.review_count})</p>
                       <p className="shopType">{shop.categories[0].title}</p>
                     </div>
                     <a href={"geo:" + [shop.coordinates.latitude, shop.coordinates.longitude]} target={'_blank'} rel='noreferrer'>
+                        
                       <p>
                         {shop.location.address1} {shop.location.address2}
                       </p>
@@ -94,7 +96,7 @@ const Yelp = () => {
                     <p>
                       <a href={"tel:" + shop.phone}>{shop.phone}</a>
                     </p>
-                    <p>Rating: {shop.rating}/5 ({shop.review_count})</p>
+                    
                     <a href={shop.url} target={'_blank'} rel='noreferrer'>
                       <p>More Info</p>
                     </a>
