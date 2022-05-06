@@ -59,11 +59,12 @@ const Yelp = () => {
       <div>
         <form onSubmit={handleSubmitting}>
           <label className="locationInput Label" htmlFor="location">
-            Where are you?
+            Where are you? &nbsp;
           </label>
           <input
             type="text"
             id="location"
+            placeholder="zipcode"
             value={userLocation}
             onChange={shopInputting}
           />
