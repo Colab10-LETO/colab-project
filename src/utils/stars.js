@@ -22,6 +22,7 @@ export default function getStars (rating) {
     } else if (rating === 5){
         <img src="http://placebacon.net/50/50" alt="bacon"/>
     } else {
-        return rating
+        return <p>no rating</p>
     }
+    
 }

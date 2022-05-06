@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Fallbackimage from "../assets/place_filler_image.png";
 import shirtrating from "../assets/shirtrating.png"
-import { getStars } from "../utils/stars"
+import getStars  from "../utils/stars"
 import Map from "./Map"
 
 const Yelp = () => {
@@ -11,6 +11,11 @@ const Yelp = () => {
   const [searchLocation, setSearchLocation] = useState("");
   const [resultsLimit, setResultsLimit] = useState();
   const [userShopSearch, setUserShopSearch] = useState([]);
+  
+  let storeRating = userShopSearch.rating / 5 
+
+  let currentRating = getStars(storeRating)
+
 
   const shopInputting = (event) => {
     setUserLocation(event.target.value);
@@ -64,7 +69,7 @@ const Yelp = () => {
           <input
             type="text"
             id="location"
-            placeholder="zipcode"
+            placeholder="enter zip code"
             value={userLocation}
             onChange={shopInputting}
           />
@@ -99,17 +104,21 @@ const Yelp = () => {
                     <p>
                       <a href={"tel:" + shop.phone}>{shop.phone}</a>
                     </p>
-                    <div className="rating"><p>Rating: {shop.rating}/5 ({shop.review_count})</p> <img className="shirt" src={shirtrating} alt="shirt" /></div>
-                    <p>{shop.reviews}</p>
-                    <a href={shop.url}>
-                      <p className="moreInfo">More Info</p>
+
+                    {currentRating
+                    ? <p>Rating: {shop.rating}/5 ({shop.review_count})</p>
+                    : <p>nope</p>
+                    }
+                    
+                    <a href={shop.url} target={'_blank'} rel='noreferrer'>
+                      <p>More Info</p>
                     </a>
                     <a href={'https://maps.google.com/?q=' + shop.location.address1} target={'_blank'} rel='noreferrer'>
                         <p className="moreInfo">Get Directions</p>
                     </a>
-                    
-                  </div>
+                    </div>
                 </div>
+                
               </li>
             );
           })}
