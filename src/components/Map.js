@@ -38,6 +38,7 @@ export default function Map({latitude, longitude}) {
 
   return (
     <div>
+      
     
     <GoogleMap mapContainerStyle={mapContainerStyle}
      zoom={8} center={center}>
