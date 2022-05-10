@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Fallbackimage from "../assets/place_filler_image.png";
 import shirtrating from "../assets/shirtrating.png"
 import getStars  from "../utils/stars"
-import Map from "./Map"
+// import Map from "./Map"
 
 const Yelp = () => {
   const [userInputting, setUserInputting] = useState("");

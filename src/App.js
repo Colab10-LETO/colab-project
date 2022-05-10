@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { Component } from "react";
 import Yelp from "./components/Yelp";
-// import Map from "./Map";
+import Map from "./components/Map";
 import About from "./components/About";
 import Header from "./components/Header";
 import { Route, Routes } from "react-router-dom";

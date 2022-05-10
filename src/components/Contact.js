@@ -2,6 +2,8 @@ const Contact = () => {
     return(
         <div>
             <form action="submit">
+                <fieldset>
+                    <legend>Connect</legend>
                 <label htmlFor="name">
                     <input type="text" name="name" placeholder="Your Name"/>
                 </label>
@@ -12,6 +14,7 @@ const Contact = () => {
                     <textarea name="message" id="message" cols="40" rows="10"></textarea>
                 </label>
                 <button>Get In Touch!</button>
+                </fieldset>
             </form>
         </div>
     )

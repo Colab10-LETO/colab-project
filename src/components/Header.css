@@ -1,9 +1,0 @@
-
-@media (max-width: 780px){
-    .hamburger{
-        display: fixed;
-        padding-top: 10px;
-        margin-left: 10px;
-        z-index: 10;
-    }
-}
