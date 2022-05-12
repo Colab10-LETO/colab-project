@@ -47,7 +47,7 @@ Header {
 }
 
 .shopContainer {
-    background-color: #F5F3F1;
+    background-color: #FEFDFC;
     margin: 0 auto;
     text-align: left;
     padding: 3%;
@@ -58,7 +58,7 @@ Header {
 }
 
 ul {
-    background-color: #F5F3F1;
+    background-color: #FEFDFC;
 }
 
 li {
@@ -69,12 +69,13 @@ li {
 .shopInfo {
     display: flex;
     flex-direction: column;
+    width: 350px;
 }
 
 
 .moreInfo {
     border: solid 1.5px #D3A25E;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
     text-decoration: none;
     letter-spacing: 1px;
@@ -91,8 +92,11 @@ li {
     transition: .3s ease-in;
 }
 
-a {
+.getDirections {
     text-decoration: none;
+}
+
+a {
     color: #000;
     width: 225px;
 }
@@ -104,6 +108,9 @@ p{
     text-align: left;
 }
 
+.shopAddress {
+    text-decoration: none;
+}
 
 .shopType {
     font-size: .7rem;
@@ -123,9 +130,16 @@ img {
     width: 155px;
     height:245px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
+@media (min-width: 840px) {
+
+.shopContainer {
+    justify-content: center;
+}
+
+}
 
 
 
