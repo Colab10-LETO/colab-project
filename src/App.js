@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 import ThriftGuide from "./components/ThriftGuide";
 import DonationGuide from "./components/DonationGuide";
 import RecyclingGuide from "./components/RecyclingGuide";
-
+import Footer from "./components/Footer";
 
 export default class App extends Component {
   render() {
@@ -16,17 +16,17 @@ export default class App extends Component {
       <div>
         <Header />
 
-        <Routes>  
+        <Routes>
           <Route path="/">Welcome</Route>
-          <Route path="/yelp" element={<Yelp/>}></Route>
-          <Route path="/about" element={<About/>}></Route>
-          <Route path="/contact" element={<Contact/>}></Route>
-          <Route path="/thrift-guide" element={<ThriftGuide/>}></Route>
-          <Route path="/donation-guide" element={<DonationGuide/>}></Route>
-          <Route path="/recycling-guide" element={<RecyclingGuide/>}></Route>
-
+          <Route path="/yelp" element={<Yelp />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/thrift-guide" element={<ThriftGuide />}></Route>
+          <Route path="/donation-guide" element={<DonationGuide />}></Route>
+          <Route path="/recycling-guide" element={<RecyclingGuide />}></Route>
         </Routes>
 
+        <Footer />
       </div>
     );
   }
