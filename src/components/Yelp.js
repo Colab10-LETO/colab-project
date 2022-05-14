@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Fallbackimage from "../assets/place_filler_image.png";
+import {BiSearch} from 'react-icons/bi'
 
 const Yelp = () => {
   const [userInputting, setUserInputting] = useState("");
@@ -53,23 +54,31 @@ const Yelp = () => {
 
   return (
     <div>
-      <div>
+      <div className="yelpWrap">
         <form onSubmit={handleSubmitting}>
-          <label className="locationInput Label" htmlFor="location">
+          <div className="wrap">
+            <label className="locationInput Label" htmlFor="location">
             Where are you?
           </label>
-          <input
+            <div className="search">
+            <input
+            className="searchTerm"
+            placeholder="Enter ZIP code"
             type="text"
             id="location"
             value={userLocation}
             onChange={shopInputting}
           />
-          <button>Search</button>
+          <button type="submit" className="searchButton"><BiSearch /> </button>
+          </div>
+          </div>
+          
+          
         </form>
         <ul className="shopList">
           {userShopSearch.map((shop) => {
             return (
-              <li key={shop.id}>
+              <li className='shopList' key={shop.id}>
                 <div className="shopContainer" key={shop.id}>
                   <div className="shopImage">
                     <img

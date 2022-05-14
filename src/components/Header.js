@@ -7,7 +7,7 @@ const Header = () => {
             <header>
                 <h1 className='logo'>Thrift Finder</h1>
                 <nav>
-                    <ul>
+                    <ul className="headerNav">
                         <li>
                             <Link to='/about'>About Us</Link>
                         </li>

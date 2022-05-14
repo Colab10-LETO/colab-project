@@ -1,7 +1,8 @@
 const Contact = () => {
     return(
         <div>
-            <form action="submit">
+            <h6>Have any questions or feedback for us? We'd be happy to hear from you! Fill out the contact form below and we'll be in touch.</h6>
+            <form className="contactForm" action="submit">
                 <label htmlFor="name">
                     <input type="text" name="name" placeholder="Your Name"/>
                 </label>

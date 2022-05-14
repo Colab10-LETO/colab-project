@@ -14,7 +14,11 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 
 html {
-    font-size: 125%
+    font-size: 125%;
+}
+
+body {
+    font-family: 'Merriweather Sans'
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Merriweather+Sans:wght@300;400&family=Roboto:wght@400;500&display=swap');
@@ -27,14 +31,74 @@ html {
     color: #F5F3F1;
 }
 
+Header {
+    background-color: #222221;
+}
+
 h1{
     margin: 0;
     padding: 30px;
 }
 
+
+
+
+/* Thrift Shop Finder Styles */
+
+/* Search bar */
+.wrap {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.search {
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #222221;
+    border-right: none;
+    padding: 10px 5px;
+    height: 36px;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    color: #AAA;
+    
+}
+
+.searchTerm:focus {
+    color: #222221;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #222221;
+    background: #222221;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchButton>svg:nth-child(1) {
+    align-self: center;
+}
+
+
+
+
 form {
     text-align: center;
-    padding: 2%;
 }
 
 h2 {
@@ -42,9 +106,11 @@ h2 {
     font-size: .85rem;
 }
 
-Header {
-    background-color: #222221;
+.yelpWrap {
+    height: 100vh;
 }
+
+
 
 .shopContainer {
     background-color: #FEFDFC;
@@ -61,7 +127,7 @@ ul {
     background-color: #FEFDFC;
 }
 
-li {
+.shopList {
     border-top: solid 1px #AAA;
     padding-bottom: 10px;
 }
@@ -133,10 +199,65 @@ img {
     border-radius: 7px;
 }
 
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Guides Styles */
+
+.guideBackground {
+    background-image: url(./assets/hannah-morgan-ycVFts5Ma4s-unsplash.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 35px 0;
+}
+
+.guideStyle {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    padding: 40px;
+    background-color: #fefdfcc1;
+    border-radius: 5px;
+}
+
+h4, h5 {
+    line-height: 60px;
+}
+
+.guideParagraph {
+    text-align: center;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #222221;
+}
+
+.footerPara {
+    text-align: center;
+    font-family: 'Roboto';
+    color: #F5F3F1;
+}
+
+
+/* Media Queries */
+
 @media (min-width: 840px) {
 
 .shopContainer {
     justify-content: center;
+}
+
+.guideStyle {
+    width: 60%;
+}
+
+.wrap {
+    width: 30%
 }
 
 }

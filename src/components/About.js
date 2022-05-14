@@ -1,11 +1,10 @@
-import AboutImage from '../assets/thrift_picture.jpg'
 
 const About = () => {
   return (
-    <div>
-        <img src={AboutImage} alt="" />
+    <div className="guideBackground">
+      <div className="guideStyle">
       <h4>About</h4>
-      <p>
+      <p className="guideParagraph">
         We live in a world where fast fashion uses up an enormous amount of
         water to produce low quality products which contributes to increasing
         landfill waste. Unless you know your options, the idea of buying and
@@ -14,12 +13,14 @@ const About = () => {
         production and consumerism. What you see is only the beginning. LETO
         Solutions will be rolling out more features to fit our users’ needs. 
       </p>
-      <p>The Team:</p>
-      <p>Lorraine Leslie - Front-End Developer</p>
-      <p>Emily Sarani - Full-Stack Developer</p>
-      <p>Tochukwu Idinmachi - Product Manager</p>
-      <p>Oscar Coello - Product Designer</p>
+      <h5>The Team:</h5>
+      <p className="guideParagraph">Lorraine Leslie - Front-End Developer</p>
+      <p className="guideParagraph">Emily Sarani - Full-Stack Developer</p>
+      <p className="guideParagraph">Tochukwu Idinmachi - Product Manager</p>
+      <p className="guideParagraph">Oscar Coello - Product Designer</p>
     </div>
+    </div>
+    
   );
 };
 
