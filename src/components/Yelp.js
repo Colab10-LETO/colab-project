@@ -86,7 +86,7 @@ const Yelp = () => {
                       <p>Rating: {shop.rating}/5 ({shop.review_count})</p>
                       <p className="shopType">{shop.categories[0].title}</p>
                     </div>
-                    <a href={"geo:" + [shop.coordinates.latitude, shop.coordinates.longitude]} target={'_blank'} rel='noreferrer'>
+                    <a className='shopAddress' href={"geo:" + [shop.coordinates.latitude, shop.coordinates.longitude]} target={'_blank'} rel='noreferrer'>
                         
                       <p>
                         {shop.location.address1} {shop.location.address2}
@@ -100,7 +100,7 @@ const Yelp = () => {
                     <a href={shop.url} target={'_blank'} rel='noreferrer'>
                       <p>More Info</p>
                     </a>
-                    <a href={'https://maps.google.com/?q=' + shop.location.address1} target={'_blank'} rel='noreferrer'>
+                    <a className='getDirections' href={'https://maps.google.com/?q=' + shop.location.address1} target={'_blank'} rel='noreferrer'>
                         <p className="moreInfo">Get Directions</p>
                     </a>
                     </div>

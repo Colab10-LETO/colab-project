@@ -9,13 +9,19 @@ const Header = () => {
                 <nav>
                     <ul>
                         <li>
-                            <Link to='/map'> Map </Link>
+                            <Link to='/about'>About Us</Link>
                         </li>
                         <li>
-                            <Link to='/yelp'>Yelp</Link>
+                            <Link to='/yelp'>Find a Shop</Link>
                         </li>
                         <li>
-                            <Link to='/about'>About</Link>
+                            <Link to='/thrift-guide'>Thrift Shopping Guide</Link>
+                        </li>
+                        <li>
+                            <Link to='/donation-guide'>Clothing Donation Guide</Link>
+                        </li>
+                        <li>
+                            <Link to='/recycling-guide'>Textile Recycling Guide</Link>
                         </li>
                         <li>
                             <Link to='/contact'>Contact</Link>
