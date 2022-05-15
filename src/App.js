@@ -18,8 +18,8 @@ export default class App extends Component {
         <Header />
 
         <Routes>
-          <Route path="/">Welcome</Route>
-          <Route path="/yelp" element={<Yelp />}></Route>
+          {/* <Route path="/">Welcome</Route> */}
+          <Route path="/" element={<Yelp />}></Route>
           <Route path="/donate" element={<Donations />}></Route>
           <Route path="/recycle" element={<Recycle />}></Route>
           <Route path="/about" element={<About />}></Route>
