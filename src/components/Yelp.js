@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import Fallbackimage from "../assets/place_filler_image.png";
-import shirtrating from "../assets/shirtrating.png"
-// import getStars  from "../utils/stars"
-import Map from "./Map"
+import {BiSearch} from 'react-icons/bi'
 
 const Yelp = () => {
   const [userInputting, setUserInputting] = useState("");
@@ -61,25 +59,32 @@ const Yelp = () => {
 
   return (
     <div>
-      <div>
+      <div className="yelpWrap">
         <form onSubmit={handleSubmitting}>
-          <label className="locationInput Label" htmlFor="location">
-            Search Thrift Stores &nbsp;
+          <div className="wrap">
+            <label className="locationInput Label" htmlFor="location">
+            Find Stores Near You
           </label>
-          <input
+            <div className="search">
+            <input
+            className="searchTerm"
+            placeholder="Enter ZIP code"
             type="text"
             id="location"
-            placeholder="enter zip code"
             value={userLocation}
             onChange={shopInputting}
           />
-          <button>Search</button>
+          <button type="submit" className="searchButton"><BiSearch /> </button>
+          </div>
+          </div>
+          
+          
         </form>
         <ul className="shopList">
           {userShopSearch.map((shop) => {
             // <Map latitude={shop.coordinates.latitude} longitude={shop.coordinates.longitude} />
             return (
-              <li key={shop.id}>
+              <li className='shopList' key={shop.id}>
                 <div className="shopContainer" key={shop.id}>
                   <div className="shopImage">
                     <img
@@ -96,7 +101,7 @@ const Yelp = () => {
                       <p>Rating: {shop.rating}/5 ({shop.review_count})</p>
                       <p className="shopType">{shop.categories[0].title}</p>
                     </div>
-                    <a href={"geo:" + [shop.coordinates.latitude, shop.coordinates.longitude]} target={'_blank'} rel='noreferrer'>
+                    <a className='shopAddress' href={"geo:" + [shop.coordinates.latitude, shop.coordinates.longitude]} target={'_blank'} rel='noreferrer'>
                         
                       <p>
                         {shop.location.address1} {shop.location.address2}
@@ -107,15 +112,11 @@ const Yelp = () => {
                       <a href={"tel:" + shop.phone}>{shop.phone}</a>
                     </p>
                     
-                    {/* {currentRating
-                    ? <p>Rating: {shop.rating}/5 ({shop.review_count})</p>
-                    : <p>nope</p>
-                    }
                     <a href={shop.url} target={'_blank'} rel='noreferrer'>
                       <p>More Info</p>
-                    </a> */}
-                    <a href={'https://maps.google.com/?q=' + shop.location.address1} target={'_blank'} rel='noreferrer'>
-                        <p className="moreInfo">Get Directions</p>
+                    </a>
+                    <a className='getDirections' href={'https://maps.google.com/?q=' + shop.location.address1} target={'_blank'} rel='noreferrer'>
+                        <p className="getDirectionsButton">Get Directions</p>
                     </a>
                     </div>
                 </div>

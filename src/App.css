@@ -14,7 +14,11 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 
 html {
-    font-size: 125%
+    font-size: 125%;
+}
+
+body {
+    font-family: 'Merriweather Sans'
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Merriweather+Sans:wght@300;400&family=Roboto:wght@400;500&display=swap');
@@ -27,14 +31,74 @@ html {
     color: #F5F3F1;
 }
 
+Header {
+    background-color: #222221;
+}
+
 h1{
     margin: 0;
     padding: 30px;
 }
 
+
+
+
+/* Thrift Shop Finder Styles */
+
+/* Search bar */
+.wrap {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.search {
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #222221;
+    border-right: none;
+    padding: 10px 5px;
+    height: 36px;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    color: #AAA;
+    
+}
+
+.searchTerm:focus {
+    color: #222221;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #222221;
+    background: #222221;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchButton>svg:nth-child(1) {
+    align-self: center;
+}
+
+
+
+
 form {
     text-align: center;
-    padding: 2%;
 }
 
 h2 {
@@ -42,12 +106,14 @@ h2 {
     font-size: .85rem;
 }
 
-Header {
-    background-color: #222221;
+.yelpWrap {
+    height: 100vh;
 }
 
+
+
 .shopContainer {
-    background-color: #F5F3F1;
+    background-color: #FEFDFC;
     margin: 0 auto;
     text-align: left;
     padding: 3%;
@@ -58,10 +124,10 @@ Header {
 }
 
 ul {
-    background-color: #F5F3F1;
+    background-color: #FEFDFC;
 }
 
-li {
+.shopList {
     border-top: solid 1px #AAA;
     padding-bottom: 10px;
 }
@@ -69,12 +135,13 @@ li {
 .shopInfo {
     display: flex;
     flex-direction: column;
+    width: 350px;
 }
 
 
-.moreInfo {
+.getDirectionsButton {
     border: solid 1.5px #D3A25E;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
     text-decoration: none;
     letter-spacing: 1px;
@@ -84,15 +151,18 @@ li {
     font-size: .8rem;
 }
 
-.moreInfo:hover {
-    background-color: #222221;
+.getDirectionsButton:hover {
+    background-color: #5e5e5e;
     border: solid 1.5px #D3A25E;
-    color: #D3A25E;
+    color: #F5F3F1;
     transition: .3s ease-in;
 }
 
-a {
+.getDirections {
     text-decoration: none;
+}
+
+a {
     color: #000;
     width: 225px;
 }
@@ -104,6 +174,9 @@ p{
     text-align: left;
 }
 
+.shopAddress {
+    text-decoration: none;
+}
 
 .shopType {
     font-size: .7rem;
@@ -123,7 +196,7 @@ img {
     width: 155px;
     height:245px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 .rating{
     display: flex;
@@ -137,6 +210,137 @@ img {
 }
 
 
+
+/* Guides Styles */
+
+.guideBackground {
+    background-image: url(./assets/hannah-morgan-ycVFts5Ma4s-unsplash.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.guideStyle {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    padding: 40px;
+    background-color: #fefdfcc1;
+    border-radius: 5px;
+}
+
+h4, h5 {
+    line-height: 60px;
+}
+
+.guideParagraph {
+    text-align: center;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #222221;
+}
+
+.footerPara {
+    text-align: center;
+    font-family: 'Roboto';
+    color: #F5F3F1;
+}
+
+/* Contact Page Styles */
+
+h6 {
+    padding: 2%;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 30px;
+    text-align: center;
+}
+
+.contactInput {
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #222221;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline:0;
+}
+
+.feedback-input:focus {
+    border: 2px solid #000;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactWrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fefdfcc1;
+    border-radius: 5px;
+}
+
+.contactSubmitButton {
+    border: solid 1.5px #D3A25E;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    width:50%;
+    padding:.5em;
+    font-family: 'Merriweather Sans';
+    font-size: .8rem;
+
+}
+
+
+
+
+/* Media Queries */
+
+@media (min-width: 840px) {
+
+.shopContainer {
+    justify-content: center;
+}
+
+.guideStyle {
+    width: 60%;
+}
+
+.wrap {
+    width: 30%
+}
+
+h6 {
+    width: 72%;
+}
+
+.contactWrapper {
+    width:60%;
+}
+
+.contactSubmitButton {
+    width: 50%;
+}
+
+.contactInput {
+    width: 70%;
+}
+
+}
 
 
 
