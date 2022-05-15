@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Fallbackimage from "../assets/place_filler_image.png";
 import shirtrating from "../assets/shirtrating.png"
-import getStars  from "../utils/stars"
-// import Map from "./Map"
+// import getStars  from "../utils/stars"
+import Map from "./Map"
 
 const Yelp = () => {
   const [userInputting, setUserInputting] = useState("");
@@ -106,14 +106,14 @@ const Yelp = () => {
                     <p>
                       <a href={"tel:" + shop.phone}>{shop.phone}</a>
                     </p>
-                    {/* 
-                    {currentRating
+                    
+                    {/* {currentRating
                     ? <p>Rating: {shop.rating}/5 ({shop.review_count})</p>
                     : <p>nope</p>
-                    } */}
+                    }
                     <a href={shop.url} target={'_blank'} rel='noreferrer'>
                       <p>More Info</p>
-                    </a>
+                    </a> */}
                     <a href={'https://maps.google.com/?q=' + shop.location.address1} target={'_blank'} rel='noreferrer'>
                         <p className="moreInfo">Get Directions</p>
                     </a>
