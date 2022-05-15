@@ -1,5 +1,8 @@
+import Footer from "./Footer";
+
 const ThriftGuide = () => {
   return (
+    <div>
     <div className="guideBackground">
       <div className="guideStyle">
         <h4>Thrift Shopping Guide</h4>
@@ -53,6 +56,8 @@ const ThriftGuide = () => {
           certain items are located throughout the store.{" "}
         </p>
       </div>
+      </div>
+      <Footer />
     </div>
   );
 };

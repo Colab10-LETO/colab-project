@@ -139,7 +139,7 @@ ul {
 }
 
 
-.moreInfo {
+.getDirectionsButton {
     border: solid 1.5px #D3A25E;
     border-radius: 5px;
     text-align: center;
@@ -151,10 +151,10 @@ ul {
     font-size: .8rem;
 }
 
-.moreInfo:hover {
-    background-color: #222221;
+.getDirectionsButton:hover {
+    background-color: #5e5e5e;
     border: solid 1.5px #D3A25E;
-    color: #D3A25E;
+    color: #F5F3F1;
     transition: .3s ease-in;
 }
 
@@ -199,10 +199,6 @@ img {
     border-radius: 7px;
 }
 
-.contactForm {
-    display: flex;
-    flex-direction: column;
-}
 
 /* Guides Styles */
 
@@ -211,7 +207,6 @@ img {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 35px 0;
 }
 
 .guideStyle {
@@ -243,6 +238,64 @@ h4, h5 {
     color: #F5F3F1;
 }
 
+/* Contact Page Styles */
+
+h6 {
+    padding: 2%;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 30px;
+    text-align: center;
+}
+
+.contactInput {
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #222221;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline:0;
+}
+
+.feedback-input:focus {
+    border: 2px solid #000;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactWrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fefdfcc1;
+    border-radius: 5px;
+}
+
+.contactSubmitButton {
+    border: solid 1.5px #D3A25E;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    width:50%;
+    padding:.5em;
+    font-family: 'Merriweather Sans';
+    font-size: .8rem;
+
+}
+
+
+
 
 /* Media Queries */
 
@@ -258,6 +311,22 @@ h4, h5 {
 
 .wrap {
     width: 30%
+}
+
+h6 {
+    width: 72%;
+}
+
+.contactWrapper {
+    width:60%;
+}
+
+.contactSubmitButton {
+    width: 50%;
+}
+
+.contactInput {
+    width: 70%;
 }
 
 }

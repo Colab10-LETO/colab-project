@@ -1,6 +1,8 @@
+import Footer from "./Footer";
 
 const About = () => {
   return (
+    <div>
     <div className="guideBackground">
       <div className="guideStyle">
       <h4>About</h4>
@@ -19,6 +21,8 @@ const About = () => {
       <p className="guideParagraph">Tochukwu Idinmachi - Product Manager</p>
       <p className="guideParagraph">Oscar Coello - Product Designer</p>
     </div>
+    </div>
+    <Footer />
     </div>
     
   );
