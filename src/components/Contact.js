@@ -5,7 +5,7 @@ const Contact = () => {
         <div className="guideBackground">
             <div className="contactWrapper">
                 <h6>Have any questions or feedback for us? We'd be happy to hear from you! Fill out the contact form below and we'll be in touch.</h6>
-            <form className="contactForm" action="submit">
+            <form className="contactForm" action="https://formsubmit.co/hello.thriftfinder@gmail.com" method="POST">
                 <label htmlFor="name">
                     <input className="contactInput" type="text" name="name" placeholder="Name"/>
                 </label>
@@ -15,7 +15,7 @@ const Contact = () => {
                 <label htmlFor="message">
                     <textarea className="contactInput" name="message" id="message" placeholder="Message" rows="10"></textarea>
                 </label>
-                <button className="contactSubmitButton">Get In Touch!</button>
+                <button className="contactSubmitButton" type="submit">Get In Touch!</button>
             </form>
             </div>
             
