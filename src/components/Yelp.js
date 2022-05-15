@@ -110,7 +110,7 @@ const Yelp = () => {
                       <p>More Info</p>
                     </a>
                     <a className='getDirections' href={'https://maps.google.com/?q=' + shop.location.address1} target={'_blank'} rel='noreferrer'>
-                        <p className="moreInfo">Get Directions</p>
+                        <p className="getDirectionsButton">Get Directions</p>
                     </a>
                     </div>
                 </div>

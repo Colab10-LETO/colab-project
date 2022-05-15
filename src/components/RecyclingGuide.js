@@ -1,6 +1,9 @@
+import Footer from "./Footer";
+
 const RecyclingGuide = () => {
     return (
-        <div className="guideBackground">
+        <div>
+            <div className="guideBackground">
             <div className="guideStyle">
             <h4>Textile Recycling Guide</h4>
             <p className="guideParagraph">Did you know you can recycle unusable clothes? We put together a guide that’ll help you reduce your textile waste.</p>
@@ -17,7 +20,12 @@ const RecyclingGuide = () => {
             <p className="guideParagraph">Some clothing companies like H&M and American Eagle accept clothing for recycling purposes. You can contact your clothing brand of choice or visit their website to see if they will recycle your clothes for you.</p>
 
         </div>
+        
         </div>
+        <Footer />
+        </div>
+        
+        
         
     )
 }

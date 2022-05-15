@@ -1,5 +1,8 @@
+import Footer from "./Footer";
+
 const DonationGuide = () => {
     return (
+        <div>
         <div className="guideBackground">
             <div className="guideStyle">
             <h4>Clothing Donation Guide</h4>
@@ -19,6 +22,8 @@ const DonationGuide = () => {
             <h5>The employees are your friends</h5>
             <p className="guideParagraph">Some wear and tear is expected with donated items, but how do you know your clothing is too damaged for donations? Ask the employees. They’ll let you know if the damage is something that’s easily repairable or they can refer you to textile recycling centers.</p>
         </div>
+        </div>
+        <Footer />
         </div>
         
     )

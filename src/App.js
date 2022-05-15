@@ -8,7 +8,6 @@ import Contact from "./components/Contact";
 import ThriftGuide from "./components/ThriftGuide";
 import DonationGuide from "./components/DonationGuide";
 import RecyclingGuide from "./components/RecyclingGuide";
-import Footer from "./components/Footer";
 
 export default class App extends Component {
   render() {
@@ -26,7 +25,7 @@ export default class App extends Component {
           <Route path="/recycling-guide" element={<RecyclingGuide />}></Route>
         </Routes>
 
-        <Footer />
+    
       </div>
     );
   }
