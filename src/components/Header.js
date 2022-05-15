@@ -21,7 +21,10 @@ const Header = () => {
             <div className="navigation">
               <ul>
                 <li className="burg">
-                  <Link to="/yelp">Home</Link>
+                  <Link to="/yelp">Thrift</Link>
+                </li>
+                <li className="burg">
+                  <Link to="/donations">Donate</Link>
                 </li>
                 <li className="burg">
                   <Link to="/about">About</Link>
