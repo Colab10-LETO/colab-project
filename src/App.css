@@ -94,7 +94,6 @@ h1{
 
 
 
-
 form {
     text-align: center;
 }
@@ -104,10 +103,11 @@ h2 {
     font-size: .85rem;
 }
 
+/* Yelp Thrift Shop Return */
+
 .yelpWrap {
     height: 100vh;
 }
-
 
 
 .shopContainer {
@@ -136,6 +136,10 @@ ul {
     width: 350px;
 }
 
+.rating {
+    font-weight: 500;
+}
+
 
 .getDirectionsButton {
     border: solid 1.5px #D3A25E;
@@ -160,7 +164,7 @@ ul {
     text-decoration: none;
 }
 
-a {
+.shopPhone, .moreInfo{
     color: #000;
     width: 225px;
 }
@@ -195,6 +199,56 @@ img {
     height:245px;
     object-fit: cover;
     border-radius: 7px;
+}
+
+/* Bottom Nav Styles */
+
+.bottomNav {
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+
+.bottomNavUl {
+    padding: 10px 0;
+    display: flex;
+    background-color: #222221;
+    gap: 60px;
+    width: 100vw;
+    justify-content: center;
+}
+
+.bottomNavLi {
+    list-style: none;
+    
+}
+
+
+.donate {
+    color: #C67B5C;
+}
+
+.buy {
+    color: #D3A25E;
+}
+
+.recycle {
+    color: #8E9D95;
+}
+
+.bottomNavImg {
+    width:50px;
+    height:50px;
+    object-fit: contain;
+}
+
+.buy, .recycle, .donate {
+    font-size: .7rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
 }
 
 
