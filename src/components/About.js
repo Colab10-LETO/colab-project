@@ -16,10 +16,11 @@ const About = () => {
         Solutions will be rolling out more features to fit our users’ needs. 
       </p>
       <h5>The Team:</h5>
-      <p className="guideParagraph">Lorraine Leslie - Front-End Developer</p>
-      <p className="guideParagraph">Emily Sarani - Full-Stack Developer</p>
-      <p className="guideParagraph">Tochukwu Idinmachi - Product Manager</p>
-      <p className="guideParagraph">Oscar Coello - Product Designer</p>
+      <a href="https://lorraineleslie.ca"
+            target={'_blank'} rel='noreferrer'><p className="guideParagraph">Lorraine Leslie - Front-End Developer:</p></a>
+      <a href="https://emilydsarani.com/" target={'_blank'} rel='noreferrer'><p className="guideParagraph">Emily Sarani - Full-Stack Developer</p></a>
+      <a href="https://www.linkedin.com/in/tochukwu-idinmachi-mba-pmp%C2%AE-476b2115/" target={'_blank'} rel='noreferrer'><p className="guideParagraph">Tochukwu Idinmachi - Product Manager</p></a>
+      <a href="https://www.oscarjosecoello.com/" target={'_blank'} rel='noreferrer'><p className="guideParagraph">Oscar Coello - Product Designer</p></a>
     </div>
     </div>
     <Footer />
