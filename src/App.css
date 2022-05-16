@@ -162,9 +162,10 @@ ul {
 
 .getDirections {
     text-decoration: none;
+    color: #222221;
 }
 
-li.shopList:nth-child(1)>div:nth-child(1)>div:nth-child(2)>a:nth-child(5)>p:nth-child(1) {
+li.shopList{
     color: black;
 }
 
