@@ -162,9 +162,14 @@ ul {
 
 .getDirections {
     text-decoration: none;
+    color: #222221;
 }
 
-.shopPhone, .moreInfo{
+li.shopList{
+    color: black;
+}
+
+.shopPhone, .moreInfo, .shopAddress{
     color: #000;
     width: 225px;
 }
