@@ -9,9 +9,8 @@ const BottomNav = () => {
       <nav>
         <ul className="bottomNavUl">
           <div className="buy">
-            <img className="bottomNavImg" src={BuyImage} alt="" />
             <li className="bottomNavLi">
-               <Link className="buy" to='/yelp'>Buy</Link>
+               <Link className="buy" to='/yelp'><img className="bottomNavImg" src={BuyImage} alt="" />Buy</Link>
             </li>
           </div>
           <div className="donate">
