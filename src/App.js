@@ -15,6 +15,8 @@ export default class App extends Component {
       <div>
         <Header />
 
+        <Yelp />
+
         <Routes>
           <Route path="/">Welcome</Route>
           <Route path="/yelp" element={<Yelp />}></Route>

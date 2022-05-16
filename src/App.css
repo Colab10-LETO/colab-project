@@ -222,18 +222,36 @@ img {
     list-style: none;
     
 }
-
-
-.donate {
-    color: #C67B5C;
+.buy:hover {
+    color: #D3A25E;
+    filter: grayscale(0%);
+    cursor: pointer;
 }
 
 .buy {
-    color: #D3A25E;
+    color: #AAA;
+    filter: grayscale(100%);
+}
+.donate:hover {
+    color: #C67B5C;
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.donate{
+    color: #AAA;
+    filter: grayscale(100%);
+}
+
+.recycle:hover {
+    color: #8E9D95;
+    filter: grayscale(0%);
+    cursor: pointer;
 }
 
 .recycle {
-    color: #8E9D95;
+    color: #AAA;
+    filter: grayscale(100%);
 }
 
 .bottomNavImg {
