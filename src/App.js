@@ -8,14 +8,13 @@ import Contact from "./components/Contact";
 import ThriftGuide from "./components/ThriftGuide";
 import DonationGuide from "./components/DonationGuide";
 import RecyclingGuide from "./components/RecyclingGuide";
+import BottomNav from "./components/BottomNav";
 
 export default class App extends Component {
   render() {
     return (
       <div>
         <Header />
-
-        <Yelp />
 
         <Routes>
           <Route path="/">Welcome</Route>
