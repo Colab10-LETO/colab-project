@@ -10,15 +10,15 @@ const BottomNav = () => {
         <ul className="bottomNavUl">
           <div className="buy">
             <li className="bottomNavLi">
-               <Link className="buy" to='/'><img className="bottomNavImg" src={BuyImage} alt="" />Buy</Link>
+               <Link className="buy" to='/'><img className="bottomNavImg" src={BuyImage} alt="shirt with cent sign" />Buy</Link>
             </li>
           </div>
           <div className="donate">
-            <img className="bottomNavImg" src={DonateImage} alt="" />
+          <Link className="buy" to='/donate'> <img className="bottomNavImg" src={DonateImage} alt="shirt with heart on it" /> </Link>
             <li className="bottomNavLi">Donate</li>
           </div>
           <div className="recycle">
-            <img className="bottomNavImg" src={RecycleImage} alt="" />
+          <Link className="buy" to='/recycle'> <img className="bottomNavImg" src={RecycleImage} alt="shirt with recycle symbol" /></Link>
             <li className="bottomNavLi">Recycle</li>
           </div>
         </ul>
