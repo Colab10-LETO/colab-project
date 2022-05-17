@@ -256,7 +256,7 @@ img {
     background-repeat: no-repeat;
 }
 
-.guideStyle {
+.guideStyle, .aboutStyle {
     text-align: center;
     margin: 0 auto;
     width: 90%;
@@ -265,11 +265,31 @@ img {
     border-radius: 5px;
 }
 
+
 h4, h5 {
     line-height: 60px;
 }
 
-.guideParagraph {
+.aboutImages {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+.aboutImg {
+    width: 150px;
+    height: 150px;
+}
+
+.aboutParagraph {
+    margin: 0 auto;
+}
+
+
+
+.guideParagraph, .aboutParagraph {
     text-align: center;
 }
 
@@ -368,6 +388,10 @@ h6 {
 
 h6 {
     width: 72%;
+}
+
+.aboutImages {
+    flex-direction: row;
 }
 
 .contactWrapper {
