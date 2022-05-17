@@ -49,7 +49,7 @@ h1{
 .wrap {
     width: 70%;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding: 60px 0;
 }
 .search {
     margin-top: 20px;
@@ -136,10 +136,6 @@ ul {
     width: 350px;
 }
 
-.rating {
-    font-weight: 500;
-}
-
 
 .getDirectionsButton {
     border: solid 1.5px #D3A25E;
@@ -208,12 +204,8 @@ img {
 .rating{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    font-weight: 500;
     
-}
-.shirt{
-    width: 30px;
-    height:30px;
 }
 
 
@@ -229,45 +221,13 @@ img {
     padding: 10px 0;
     display: flex;
     background-color: #222221;
-    gap: 60px;
+    gap: 100px;
     width: 100vw;
     justify-content: center;
 }
 
 .bottomNavLi {
     list-style: none;
-    
-}
-.buy:hover {
-    color: #D3A25E;
-    filter: grayscale(0%);
-    cursor: pointer;
-}
-
-.buy {
-    color: #AAA;
-    filter: grayscale(100%);
-}
-.donate:hover {
-    color: #C67B5C;
-    filter: grayscale(0%);
-    cursor: pointer;
-}
-
-.donate{
-    color: #AAA;
-    filter: grayscale(100%);
-}
-
-.recycle:hover {
-    color: #8E9D95;
-    filter: grayscale(0%);
-    cursor: pointer;
-}
-
-.recycle {
-    color: #AAA;
-    filter: grayscale(100%);
 }
 
 .bottomNavImg {
@@ -286,7 +246,7 @@ img {
 }
 
 
-/* Guides Styles */
+/* Guide Styles */
 
 .guideBackground {
     background-image: url(./assets/hannah-morgan-ycVFts5Ma4s-unsplash.jpeg);
