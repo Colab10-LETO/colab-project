@@ -20,30 +20,34 @@ const Header = () => {
           </div>
         </div>
         <nav>
-          {hamburgerMenu && (
-            <div className="navigation">
-              <ul>
-              <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about">About Us</Link>
-                </li>
-                <li>
-                  <Link to="/thrift-guide">Thrift Shopping Guide</Link>
-                </li>
-                <li>
-                  <Link to="/donation-guide">Clothing Donation Guide</Link>
-                </li>
-                <li>
-                  <Link to="/recycling-guide">Textile Recycling Guide</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Contact</Link>
-                </li>
-              </ul>
-            </div>
-          )}
+          <div className="navbar">
+            {hamburgerMenu && (
+              <div className="navigation">
+                <ul className="nav-links">
+                  <div className="style-container">
+                  <li className="link">
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li className="link">
+                    <Link to="/about">About Us</Link>
+                  </li>
+                  <li className="link">
+                    <Link to="/thrift-guide">Thrift Shopping Guide</Link>
+                  </li>
+                  <li className="link">
+                    <Link to="/donation-guide">Clothing Donation Guide</Link>
+                  </li>
+                  <li className="link">
+                    <Link to="/recycling-guide">Textile Recycling Guide</Link>
+                  </li>
+                  <li className="link">
+                    <Link to="/contact">Contact</Link>
+                  </li>
+                  </div>  
+                </ul>
+              </div>
+            )}
+          </div>
         </nav>
       </header>
     </div>
