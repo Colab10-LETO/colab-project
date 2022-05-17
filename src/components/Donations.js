@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Fallbackimage from "../assets/place_filler_image.png";
 import {BiSearch} from 'react-icons/bi'
+import BottomNav from "./BottomNav";
 
 const Donations = () => {
     const [userInput, setUserInput] = useState("");
@@ -111,6 +112,7 @@ const Donations = () => {
               })}
             </ul>
           </div>
+          <BottomNav />
         </div>
       );
     };
