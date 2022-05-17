@@ -340,6 +340,12 @@ h6 {
 
 }
 
+/* About Styles */
+
+.aboutLinks p {
+    color: #222221;
+    line-height: 40px;
+}
 
 
 
