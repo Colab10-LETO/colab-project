@@ -10,7 +10,7 @@ const BottomNav = () => {
         <ul className="bottomNavUl">
           <div className="buy">
             <li className="bottomNavLi">
-               <Link className="buy" to='/yelp'><img className="bottomNavImg" src={BuyImage} alt="" />Buy</Link>
+               <Link className="buy" to='/'><img className="bottomNavImg" src={BuyImage} alt="" />Buy</Link>
             </li>
           </div>
           <div className="donate">

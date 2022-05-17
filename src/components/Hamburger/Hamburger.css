@@ -18,15 +18,17 @@
     width: 2rem;
     height: 0.25rem;
     border-radius: 10px;
-    background-color: #D3A25E;
+    background-color: white;
     transform-origin: 1px;
     transition: all 0.3s linear;
     cursor: pointer;
+    justify-content: flex-end;
+    
   }
 .cancel{
   background-color:  #22222100;
   cursor: pointer;
-  color: #D3A25E;
+  color: white;
   border-radius: 0;
   
 
