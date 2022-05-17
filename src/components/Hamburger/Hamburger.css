@@ -30,12 +30,11 @@
   cursor: pointer;
   border-radius: 45px;
   border: #22222100;
+  
 }
 
 
 .image{
-  height: 45px;
-  width: 45px;
-  border-radius: 35px;
-  border: #22222100;
+  height: 40px;
+  width: 40px;
 }
