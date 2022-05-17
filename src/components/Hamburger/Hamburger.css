@@ -1,0 +1,33 @@
+.hamburger {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 10;
+  }
+  .hamburger:active{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 10;
+  }
+  .burger {
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    background-color: #D3A25E;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+.cancel{
+  background-color:  #22222100;
+  cursor: pointer;
+  color: #D3A25E;
+  border-radius: 0;
+  
+
+}

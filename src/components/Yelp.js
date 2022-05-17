@@ -10,6 +10,11 @@ const Yelp = () => {
   const [searchLocation, setSearchLocation] = useState("");
   const [resultsLimit, setResultsLimit] = useState();
   const [userShopSearch, setUserShopSearch] = useState([]);
+  
+  // let storeRating = userShopSearch.rating / 5 
+
+  // let currentRating = getStars(storeRating)
+
 
   const shopInputting = (event) => {
     setUserLocation(event.target.value);
@@ -59,7 +64,7 @@ const Yelp = () => {
         <form onSubmit={handleSubmitting}>
           <div className="wrap">
             <label className="locationInput Label" htmlFor="location">
-            Where are you?
+            Find Stores Near You
           </label>
             <div className="search">
             <input
@@ -78,6 +83,7 @@ const Yelp = () => {
         </form>
         <ul className="shopList">
           {userShopSearch.map((shop) => {
+            // <Map latitude={shop.coordinates.latitude} longitude={shop.coordinates.longitude} />
             return (
               <li className='shopList' key={shop.id}>
                 <div className="shopContainer" key={shop.id}>
@@ -120,7 +126,6 @@ const Yelp = () => {
             );
           })}
         </ul>
-        {/* <Map latitude={searchLocation.latitude} longitude={searchLocation.longitude} /> */}
       </div>
       <BottomNav />
     </div>
