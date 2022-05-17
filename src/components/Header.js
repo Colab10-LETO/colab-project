@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Hamburger from "./Hamburger/Hamburger";
+import "./Header.css"
 
 const Header = () => {
   const [hamburgerMenu, setHamburgerMenu] = useState(false);
@@ -12,11 +13,13 @@ const Header = () => {
   return (
     <div>
       <header>
+          <div className="header">
         <h1 className="logo">Thrift Finder</h1>
-        <nav>
           <div className="toggle" onClick={toggleHamburger}>
             <Hamburger isOpen={hamburgerMenu} />
           </div>
+          </div>
+        <nav>
           {hamburgerMenu && (
             <div className="navigation">
               <ul>
