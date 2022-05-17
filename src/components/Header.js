@@ -5,11 +5,16 @@ import "./Header.css";
 
 const Header = () => {
   const [hamburgerMenu, setHamburgerMenu] = useState(false);
+  const [closeNav, setCloseNav] = useState(true)
 
   const toggleHamburger = () => {
     setHamburgerMenu((prevState) => !prevState);
   };
+  const closeBurgerBar = () => {
+      setCloseNav(false)
+      closeNav.collaspe('hide')
 
+ }
   return (
     <div>
       <header>
@@ -26,22 +31,22 @@ const Header = () => {
                 <ul className="nav-links">
                   <div className="style-container">
                   <li className="link">
-                    <Link to="/">Home</Link>
+                    <Link to="/" onClick={closeBurgerBar}>Home</Link>
                   </li>
                   <li className="link">
-                    <Link to="/about">About Us</Link>
+                    <Link to="/about" onClick={closeBurgerBar}>About Us</Link>
                   </li>
                   <li className="link">
-                    <Link to="/thrift-guide">Thrift Shopping Guide</Link>
+                    <Link to="/thrift-guide" onClick={closeBurgerBar}>Thrift Shopping Guide</Link>
                   </li>
                   <li className="link">
-                    <Link to="/donation-guide">Clothing Donation Guide</Link>
+                    <Link to="/donation-guide" onClick={closeBurgerBar}>Clothing Donation Guide</Link>
                   </li>
                   <li className="link">
-                    <Link to="/recycling-guide">Textile Recycling Guide</Link>
+                    <Link to="/recycling-guide" onClick={closeBurgerBar}>Textile Recycling Guide</Link>
                   </li>
                   <li className="link">
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/contact" onClick={closeBurgerBar}>Contact</Link>
                   </li>
                   </div>  
                 </ul>
