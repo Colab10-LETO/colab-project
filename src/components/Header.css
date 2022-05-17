@@ -5,10 +5,68 @@
     align-items: center;
     margin-right:1rem ;
 }
+
+.navbar {
+    width: 100%;
+    box-shadow: 0 1px 4px rgba(251, 252, 253, 0.981);
+    backdrop-filter: "blur(10px)";
+  }
 .navigation{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin-right:1rem;
 }
-ul{
+
+.nav-links{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
     list-style: none;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../assets/hannah-morgan-ycVFts5Ma4s-unsplash.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
+.style-container{
+    margin-top: 3rem;
+    margin-left: 6rem;
+    width: 50%;
+
+    
+}
+.link{
+    text-align: left;
+    padding: 1rem;
+    border: 1px solid rgb(144, 144, 144);
+    background-color: #fefdfcc1;
+    
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #D3A25E;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: black;
+    text-decoration: none;
+  }
