@@ -5,7 +5,9 @@ The state of thrift shopping and clothing donations is very unorganized, and it 
 
 ## Acknowledgements
 
+[More Info](https://www.joincolab.io/projects/thrift-finder)
 
+[Product Pitch Video](https://www.youtube.com/watch?v=Kku6j5WriHE)
 
 [View Product Spec Document](https://docs.google.com/document/d/1u4qCYVvYhFgNcKojlelL_qh9j8xH2LC0OGhqGWwX7Wg/edit)
 ## API Reference
